@@ -111,7 +111,7 @@ namespace RolPlayerCreator
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             subClassComboBox.Items.Clear();
             subClassComboBox.Text = string.Empty;
@@ -234,6 +234,7 @@ namespace RolPlayerCreator
                     classWIS = 1;
                     break;
                 default:
+                    subClassComboBox.Text = "";
                     break;
             }
         }
@@ -356,7 +357,7 @@ namespace RolPlayerCreator
                 cha.Weapon2 = w2;
                 cha.Weapon3 = w3;
                 cha.Traits = saveTraits();
-                string directory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+                string directory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
                 string jsonString = JsonSerializer.Serialize(cha);
                 string folderName = "Personajes";
                 string folderPath = Path.Combine(directory, folderName);
@@ -740,7 +741,7 @@ namespace RolPlayerCreator
 
         }
 
-        private void subClassComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void backgroundComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

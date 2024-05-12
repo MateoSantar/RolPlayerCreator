@@ -906,7 +906,7 @@ namespace RolPlayerCreator
             // 
             label5.AutoSize = true;
             label5.Font = new System.Drawing.Font("PMingLiU-ExtB", 10.8F);
-            label5.Location = new System.Drawing.Point(517, 4);
+            label5.Location = new System.Drawing.Point(545, 4);
             label5.Name = "label5";
             label5.Size = new System.Drawing.Size(146, 18);
             label5.TabIndex = 4;
@@ -926,7 +926,7 @@ namespace RolPlayerCreator
             // 
             label3.AutoSize = true;
             label3.Font = new System.Drawing.Font("PMingLiU-ExtB", 10.8F);
-            label3.Location = new System.Drawing.Point(480, 3);
+            label3.Location = new System.Drawing.Point(508, 3);
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(30, 18);
             label3.TabIndex = 4;
@@ -945,7 +945,7 @@ namespace RolPlayerCreator
             // finalPlayerName
             // 
             finalPlayerName.Font = new System.Drawing.Font("PMingLiU-ExtB", 13.8F);
-            finalPlayerName.Location = new System.Drawing.Point(518, 23);
+            finalPlayerName.Location = new System.Drawing.Point(546, 23);
             finalPlayerName.Name = "finalPlayerName";
             finalPlayerName.ReadOnly = true;
             finalPlayerName.Size = new System.Drawing.Size(212, 35);
@@ -981,10 +981,10 @@ namespace RolPlayerCreator
             // finalLevel
             // 
             finalLevel.Font = new System.Drawing.Font("PMingLiU-ExtB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            finalLevel.Location = new System.Drawing.Point(485, 27);
+            finalLevel.Location = new System.Drawing.Point(508, 27);
             finalLevel.Name = "finalLevel";
             finalLevel.ReadOnly = true;
-            finalLevel.Size = new System.Drawing.Size(26, 29);
+            finalLevel.Size = new System.Drawing.Size(32, 29);
             finalLevel.TabIndex = 2;
             // 
             // finalHitDice
@@ -1003,7 +1003,7 @@ namespace RolPlayerCreator
             finalClass.Location = new System.Drawing.Point(241, 27);
             finalClass.Name = "finalClass";
             finalClass.ReadOnly = true;
-            finalClass.Size = new System.Drawing.Size(238, 28);
+            finalClass.Size = new System.Drawing.Size(262, 28);
             finalClass.TabIndex = 2;
             // 
             // finalName
@@ -1108,7 +1108,6 @@ namespace RolPlayerCreator
             subClassComboBox.Name = "subClassComboBox";
             subClassComboBox.Size = new System.Drawing.Size(194, 23);
             subClassComboBox.TabIndex = 9;
-            subClassComboBox.SelectedIndexChanged += subClassComboBox_SelectedIndexChanged;
             // 
             // panel18
             // 
@@ -1241,6 +1240,7 @@ namespace RolPlayerCreator
             backgroundComboBox.Name = "backgroundComboBox";
             backgroundComboBox.Size = new System.Drawing.Size(151, 31);
             backgroundComboBox.TabIndex = 6;
+            backgroundComboBox.SelectedIndexChanged += backgroundComboBox_SelectedIndexChanged;
             // 
             // WISComboBox
             // 
@@ -1318,7 +1318,7 @@ namespace RolPlayerCreator
             levelComboBox.Size = new System.Drawing.Size(50, 31);
             levelComboBox.TabIndex = 4;
             levelComboBox.Text = "0";
-            levelComboBox.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            levelComboBox.SelectedIndexChanged += label1_Click;
             // 
             // alignmentComboBox
             // 
@@ -1329,7 +1329,7 @@ namespace RolPlayerCreator
             alignmentComboBox.Name = "alignmentComboBox";
             alignmentComboBox.Size = new System.Drawing.Size(195, 31);
             alignmentComboBox.TabIndex = 4;
-            alignmentComboBox.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            alignmentComboBox.SelectedIndexChanged += label1_Click;
             // 
             // raceComboBox
             // 
@@ -1340,7 +1340,7 @@ namespace RolPlayerCreator
             raceComboBox.Name = "raceComboBox";
             raceComboBox.Size = new System.Drawing.Size(151, 31);
             raceComboBox.TabIndex = 4;
-            raceComboBox.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            raceComboBox.SelectedIndexChanged += label1_Click;
             // 
             // classComboBox
             // 
@@ -1351,7 +1351,7 @@ namespace RolPlayerCreator
             classComboBox.Name = "classComboBox";
             classComboBox.Size = new System.Drawing.Size(151, 31);
             classComboBox.TabIndex = 4;
-            classComboBox.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            classComboBox.SelectedIndexChanged += ComboBox1_SelectedIndexChanged;
             // 
             // armor
             // 
